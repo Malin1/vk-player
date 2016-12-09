@@ -11,7 +11,7 @@ import time
 import psutil
 
 
-class owner:
+class vkuser:
 	def __init__(self):
 		id = 0;
 		screen_name = ''
@@ -62,7 +62,7 @@ def get_albums(owner_id):
 	except:
 		return []
 
-config.owners = [owner(x) for i, x in enumerate(config.owners)]
+config.owners = [vkuser(x) for i, x in enumerate(config.owners)]
 
 print('Choose wisely:')
 [print('{}. {}'.format(num + 1, x.screen_name)) for num, x in enumerate(config.owners)]
