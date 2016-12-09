@@ -1,3 +1,3 @@
-owner_id = ['',]
-token = ''
+owners = ['', ]
 ffmpeg_path = ''
+token = ''
